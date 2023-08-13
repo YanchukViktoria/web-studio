@@ -19,19 +19,53 @@
 }
 
 :root{
-    --main-color: rgba(0, 0, 0, 1);
-    --main-color: rgba(33, 150, 243, 1);
-    --main-color: rgba(33, 33, 33, 1);
-    --main-color: rgba(117, 117, 117, 1);
-    --main-color: rgba(47, 48, 58, 1);
-    --main-color: rgba(236, 236, 236, 1);
-    --main-color: rgba(255, 255, 255, 0.6);
-    --main-color: rgba(255, 255, 255, 0.1);
+    --black-main-color: rgba(0, 0, 0, 1);
+    --blue-main-color: rgba(33, 150, 243, 1);
+    --descript-and-header-color: rgba(33, 33, 33, 1);
+    --p-color: rgba(117, 117, 117, 1);
+    --idn-color: rgba(47, 48, 58, 1);
+    --white-main-color: rgba(236, 236, 236, 1);
+    --footer-mail-number-color: rgba(255, 255, 255, 0.6);
+    --adress-color: rgba(255, 255, 255, 0.1);
 }
 
 @font-face {
     font-family: Roboto;
-    font-family: Oleo Script;
+    /* font-family: Oleo Script; */
     font-family: Raleway;
     src: url();
+}
+
+body{
+    font-family: Roboto;
+    font-size: 14px;
+}
+.nav{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.nav-list-item{
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts-list{
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.nav-list-link{
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left;
 }

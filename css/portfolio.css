@@ -1,0 +1,17 @@
+
+body{
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+:root{
+    --black-main-color: rgba(0, 0, 0, 1);
+    --blue-main-color: rgba(33, 150, 243, 1);
+    --descript-and-header-color: rgba(33, 33, 33, 1);
+    --p-number-in-head-color: rgba(117, 117, 117, 1);
+    --idn-color: rgba(47, 48, 58, 1);
+    --white-main-color: rgba(236, 236, 236, 1);
+    --footer-mail-number-color: rgba(255, 255, 255, 0.6);
+    --adress-color: rgba(255, 255, 255, 0.1);
+}
+
