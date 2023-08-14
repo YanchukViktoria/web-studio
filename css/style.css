@@ -1,47 +1,39 @@
-.web{
-    color: #2196F3;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-align: left;
-
-}
-.studio{
-    color: #000000;
-    font-family: Oleo Script;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0.03em;
-    text-align: left;
-}
-
 :root{
     --black-main-color: rgba(0, 0, 0, 1);
     --blue-main-color: rgba(33, 150, 243, 1);
     --descript-and-header-color: rgba(33, 33, 33, 1);
     --p-color: rgba(117, 117, 117, 1);
-    --idn-color: rgba(47, 48, 58, 1);
+    --bg-color: rgba(47, 48, 58, 1);
     --white-main-color: rgba(236, 236, 236, 1);
     --footer-mail-number-color: rgba(255, 255, 255, 0.6);
-    --adress-color: rgba(255, 255, 255, 0.1);
+    --adress-hero-color: rgba(255, 255, 255, 1);
+    --team-bg-color: rgba(245, 244, 250, 1);
 }
 
 @font-face {
     font-family: Roboto;
-    /* font-family: Oleo Script; */
     font-family: Raleway;
     src: url();
+}
+
+.header{
+    background: var(--white-main-color);
+}
+
+.logo-web{
+    color: var(--blue-main-color);
+}
+
+.logo-stud-header{
+    color: var(--black-main-color);
 }
 
 body{
     font-family: Roboto;
     font-size: 14px;
 }
+
 .nav{
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
@@ -49,23 +41,120 @@ body{
     text-align: left;
 }
 
-.nav-list-item{
+.nav-list, .contacts-list, .feautures-list, .team-list, .adress-list, .work-list{
+    list-style: none;
+}
+
+
+.nav-list-item, .nav-list-link, .contacts-list-item{
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-align: left;
 }
 
-.contacts-list{
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+.section-hero{
+    background-color: var(--bg-color);
+}
+
+.section-hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--adress-hero-color);
+}
+
+.header-logo, .footer-logo{
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-decoration: none;
+}
+
+.section-hero-btn{
+     background: var(--blue-main-color);
+}
+
+.section-hero-button-text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--adress-hero-color);
+}
+
+.feautures-list-title, .feautures-list-descript{
+    font-size: 14px;
+    letter-spacing: 0.03em;
     text-align: left;
 }
 
-.nav-list-link{
-    font-weight: 500;
+.feautures-list-title{
+    font-weight: 700;
+    line-height: 1,1;
+    color: var(--descript-and-header-color);
+}
+
+.feautures-list-descript{
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--p-color);
+}
+
+.section-team{
+    background: var(--team-bg-color);
+}
+
+.section-work-title, .section-team-descript{
+    font-size: 36px;
+    font-weight: 700;
     line-height: 1.1;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--descript-and-header-color);
+}
+
+.team-list-title, .team-list-descript{
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team-list-title{
+    font-weight: 500;
+    color: var(--descript-and-header-color);
+}
+
+.team-list-descript{
+    font-weight: 400;
+    color: var(--p-color);
+}
+
+.footer{
+    background: var(--bg-color);
+}
+
+.logo-stud-footer{
+    color: var(--adress-hero-color);
+}
+
+.adress-list-link{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
     text-align: left;
+    color: var(--footer-mail-number-color);
+    text-decoration: none;
+}
+
+#footer-adress{
+    color: var(--adress-hero-color);
 }
