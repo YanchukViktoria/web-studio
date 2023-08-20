@@ -17,7 +17,7 @@
 }
 
 .header{
-    background: var(--white-main-color);
+    background-color: var(--white-main-color);
 }
 
 .logo-web{
@@ -40,11 +40,6 @@ body{
     letter-spacing: 0.02em;
     text-align: left;
 }
-
-.nav-list, .contacts-list, .feautures-list, .team-list, .adress-list, .work-list{
-    list-style: none;
-}
-
 
 .nav-list-item, .nav-list-link, .contacts-list-item{
     font-weight: 500;
@@ -77,16 +72,16 @@ body{
 }
 
 .section-hero-btn{
-     background: var(--blue-main-color);
-}
-
-.section-hero-button-text{
+     background-color: var(--blue-main-color);
+     color: var(--white-main-color);
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.8;
+    line-height: 1,8;
     letter-spacing: 0.06em;
     text-align: center;
-    color: var(--adress-hero-color);
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
 }
 
 .feautures-list-title, .feautures-list-descript{
