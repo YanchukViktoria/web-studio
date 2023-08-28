@@ -20,6 +20,7 @@
     background-color: var(--white-main-color);
 }
 
+
 .logo-web{
     color: var(--blue-main-color);
 }
@@ -72,7 +73,7 @@ body{
 }
 
 .section-hero{
-    margin-bottom: 94px;
+    padding: 94px auto;
 }
 
 .section-hero-btn{
@@ -89,7 +90,7 @@ body{
 }
 
 .section-features{
-    margin-bottom: 94px;
+    padding: 94px auto;
 }
 
 .feautures-list-title, .feautures-list-descript{
@@ -111,7 +112,7 @@ body{
 }
 
 .section-work{
-    margin-bottom: 94px;
+    padding: 94px auto;
 }
 
 .work-list-img{
