@@ -73,7 +73,7 @@ body{
 }
 
 .section-hero{
-    padding: 94px auto;
+    padding: 94px;
 }
 
 .section-hero-btn{
@@ -90,7 +90,7 @@ body{
 }
 
 .section-features{
-    padding: 94px auto;
+    padding: 94px;
 }
 
 .feautures-list-title, .feautures-list-descript{
@@ -112,7 +112,7 @@ body{
 }
 
 .section-work{
-    padding: 94px auto;
+    padding: 94px;
 }
 
 .work-list-img{
@@ -180,6 +180,6 @@ body{
 .container{
   padding-left: 15px;
   padding-right: 15px;  
-  margin: 1200px;
+  width: 1200;
   margin: 0 auto;
 }
