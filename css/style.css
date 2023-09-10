@@ -241,7 +241,6 @@ body{
     text-align: left;
     color: var(--footer-mail-number-color);
     text-decoration: none;
-    background: #000;
 }
 
 .adress-list-location-link{
