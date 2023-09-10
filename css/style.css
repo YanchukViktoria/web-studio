@@ -10,29 +10,17 @@
     --team-bg-color: rgba(245, 244, 250, 1);
 }
 
-@font-face {
-    font-family: Roboto;
-    font-family: Raleway;
-    src: url();
-}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;  
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
 
 .header{
     background-color: var(--white-main-color);
     padding: 24px 0;
-}
-
-
-.logo-web{
-    color: var(--blue-main-color);
-}
-
-.logo-stud-header{
-    color: var(--black-main-color);
-}
-
-body{
-    font-family: Roboto;
-    font-size: 14px;
 }
 
 .header-wrap{
@@ -41,6 +29,30 @@ body{
     align-items: center;
 }
 
+    .logo{
+        font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        text-decoration: none;
+        color: var(--blue-main-color);
+    }
+        /* Лого */
+    .logo-header{
+        color: var(--black-main-color);
+    }
+
+    .logo-footer{
+        color: var(--adress-hero-color);
+    }
+
+body{
+    font-family: Roboto;
+    font-size: 14px;
+}
+        /* Шапка */
 .nav{
     font-size: 14px;
     font-weight: 500;
@@ -64,10 +76,10 @@ body{
     letter-spacing: 0.02em;
     text-align: left;
 }
-
-.section-hero{
-    background-color: var(--bg-color);
-}
+        /* Секція герой */
+    .section-hero{
+        background-color: var(--bg-color);
+    }
 
 .section-hero-title{
     font-weight: 900;
@@ -76,16 +88,8 @@ body{
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--adress-hero-color);
-}
-
-.header-logo, .footer-logo{
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-decoration: none;
+    max-width: 696px;
+    margin: 0 auto;
 }
 
 .section-hero{
@@ -103,14 +107,21 @@ body{
     width: 216px;
     height: 50px;
     border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
 }
+        /* Особливості */
+    .section-features{
+        padding: 94px 0;
+    }
 
-.section-features{
-    padding: 94px;
+.feautures-list{
+    display: flex;
+    justify-content: space-between;
 }
 
 .feautures-list-title, .feautures-list-descript{
-    font-size: 14px;
     letter-spacing: 0.03em;
     text-align: left;
 }
@@ -119,6 +130,11 @@ body{
     font-weight: 700;
     line-height: 1,1;
     color: var(--descript-and-header-color);
+    padding-bottom: 10px;
+}
+
+.feauture-list-item{
+    max-width: 270px;
 }
 
 .feautures-list-descript{
@@ -126,19 +142,32 @@ body{
     line-height: 1.7;
     color: var(--p-color);
 }
+        /* "Чим ми займаємось" */
+    .section-work{
+        padding-bottom: 94px;
+    }
 
-.section-work{
-    padding: 94px;
+.work-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-work-title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 .work-list-img{
     width: 370px;
     height: 294px;
 }
-
-.section-team{
-    background: var(--team-bg-color);
-}
+        /* Команда */
+    .section-team{
+        background: var(--team-bg-color);
+        padding-bottom: 94px;
+    }
 
 .section-work-title, .section-team-descript{
     font-size: 36px;
@@ -149,6 +178,15 @@ body{
     color: var(--descript-and-header-color);
 }
 
+.section-team-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.6px;
+    letter-spacing: 0.03em;
+}
+
 .team-list-title, .team-list-descript{
     font-size: 16px;
     line-height: 1.1;
@@ -156,9 +194,10 @@ body{
     text-align: center;
 }
 
-.team-list-title{
-    font-weight: 500;
-    color: var(--descript-and-header-color);
+
+.team-list-item{
+    background: var(--adress-hero-color);
+    height: 368px;
 }
 
 .team-list-img{
@@ -166,24 +205,33 @@ body{
     height: 260px;
 }
 
+.team-list-title{
+    color: var(--descript-and-header-color);
+    padding-bottom: 10px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
 .team-list-descript{
-    font-weight: 400;
     color: var(--p-color);
+    font-weight: 400;
 }
 
-.footer{
-    background: var(--bg-color);
-    padding: 24px 0;
-}
-
-.footer-wrap{
+.team-wrap{
     display: flex;
     flex-direction: column;
+    
 }
 
-.logo-stud-footer{
-    color: var(--adress-hero-color);
+.team-list{
+    display: flex;
+    justify-content: space-between;
 }
+        /* Футер */
+    .footer{
+        background: var(--bg-color);
+        padding: 60px 0;
+    }
 
 .adress-list-link{
     font-size: 14px;
@@ -195,13 +243,6 @@ body{
     text-decoration: none;
 }
 
-#footer-adress{
+.adress-list-location-link{
     color: var(--adress-hero-color);
-}
-
-.container{
-  padding-left: 15px;
-  padding-right: 15px;  
-  width: 1200px;
-  margin: 0 auto;
 }
