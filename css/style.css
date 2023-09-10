@@ -76,9 +76,11 @@ body{
     letter-spacing: 0.02em;
     text-align: left;
 }
+
         /* Секція герой */
     .section-hero{
         background-color: var(--bg-color);
+        padding: 200px 0;
     }
 
 .section-hero-title{
@@ -90,10 +92,6 @@ body{
     color: var(--adress-hero-color);
     max-width: 696px;
     margin: 0 auto;
-}
-
-.section-hero{
-    padding: 200px 0;
 }
 
 .section-hero-btn{
@@ -217,12 +215,6 @@ body{
     font-weight: 400;
 }
 
-.team-wrap{
-    display: flex;
-    flex-direction: column;
-    
-}
-
 .team-list{
     display: flex;
     justify-content: space-between;
@@ -246,5 +238,3 @@ body{
 .adress-list-location-link{
     color: var(--adress-hero-color);
 }
-
-/* vmfdopos */
