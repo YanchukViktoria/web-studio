@@ -29,6 +29,8 @@
     align-items: center;
 }
 
+     /* Лого */
+
     .logo{
         font-family: Raleway;
         font-size: 26px;
@@ -39,7 +41,7 @@
         text-decoration: none;
         color: var(--blue-main-color);
     }
-        /* Лого */
+       
     .logo-header{
         color: var(--black-main-color);
     }
@@ -54,7 +56,6 @@ body{
 }
         /* Шапка */
 .nav{
-    font-size: 14px;
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -70,6 +71,10 @@ body{
     gap: 50px;
 }
 
+.header-link-mail, .header-link-number{
+    color: var(--p-color);
+}
+
 .nav-list-item, .nav-list-link, .contacts-list-item{
     font-weight: 500;
     line-height: 1.1;
@@ -78,6 +83,7 @@ body{
 }
 
         /* Секція герой */
+
     .section-hero{
         background-color: var(--bg-color);
         padding: 200px 0;
@@ -162,9 +168,10 @@ body{
     height: 294px;
 }
         /* Команда */
+
     .section-team{
         background: var(--team-bg-color);
-        padding-bottom: 94px;
+        padding: 94px;
     }
 
 .section-work-title, .section-team-descript{
@@ -181,7 +188,7 @@ body{
     margin-bottom: 50px;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.6px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
 }
 
@@ -196,6 +203,9 @@ body{
 .team-list-item{
     background: var(--adress-hero-color);
     height: 368px;
+    border-radius: 4px;
+    box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.14);
+    
 }
 
 .team-list-img{
@@ -225,6 +235,10 @@ body{
         padding: 60px 0;
     }
 
+.adress{
+ margin-top: 20px;
+}
+
 .adress-list-link{
     font-size: 14px;
     font-weight: 400;
@@ -237,4 +251,8 @@ body{
 
 .adress-list-location-link{
     color: var(--adress-hero-color);
+}
+
+.adress-list-item{
+    margin-bottom: 9px;
 }

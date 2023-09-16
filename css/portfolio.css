@@ -1,4 +1,3 @@
-
 body{
     font-family: Roboto;
     font-size: 14px;
@@ -23,6 +22,8 @@ body{
 body{
     font-family: Roboto;
     font-size: 14px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .container{
@@ -44,6 +45,7 @@ body{
     color: var(--blue-main-color);
 }
     /* Лого */
+
 .logo-header{
     color: var(--black-main-color);
 }
@@ -63,16 +65,16 @@ body{
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    text-align: left;
+    justify-content: start;
 }
 .nav-list{
     display: flex;
     gap: 50px;
 }
 
-.contacts-list{
-    display: flex;
-    gap: 50px;
+.nav-list-item{
+    line-height: 1.1;
+    letter-spacing: 0.02em;  
 }
 
 .nav-list-item, .nav-list-link, .contacts-list-item{
@@ -82,49 +84,53 @@ body{
     text-align: left;
 }
 
-    /* Портфоліо */
+.contacts-list{
+    display: flex;
+    gap: 50px;
+}
 
-.section-portfolio{
-    padding-top: 94px;
+.header-link-mail, .header-link-number{
+    color: var(--p-number-in-head-color);
+}
+
+     /* Портфоліо */
+
+     .section-portfolio{
+    padding-bottom: 94px;
+    }
+
+.portfolio-list-move{
+    padding-left: 24px;
+    padding-top: 24px;
 }
 
 .filters-list{
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 5px;
+    padding-top: 94px;
 }
 
-     /* Портфоліо */
-
-.section-portfolio{
-    padding-bottom: 94px;
+.filter-list-btn{
+    padding: 6px 22px;
+    border-radius: 4px;
 }
+
+    /* . */
 
 .portfolio-list{
-    text-align: left;
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
-    gap: 15px;
-    padding-top: 50px;
+    gap: 30px;
 }
 
-.portfolio-list-img{
-    width: 370px;
-    height: 294px;
-    display: block;
-}
-
-.portfolio-list-title, .portfolio-list-descript{
-    
-}
 
 .portfolio-list-title{
     font-size: 18px;
     font-weight: 700;
-    line-height: 2px;
+    line-height: 2;
     letter-spacing: 0.06em;
-    padding-bottom: 4px;
+    color: var(--descript-and-header-color);
 }
 
 .portfolio-list-descript{
@@ -132,11 +138,15 @@ body{
     font-weight: 400;
     line-height: 1.8px;
     letter-spacing: 0.03em;
+    margin-top: 19px;
+    color: var(--p-number-in-head-color);
 }
 
 .portfolio-list-item{
-    height: 370px;
     border: 1px solid var(--white-main-color);
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 }
 
     /* Футер */
@@ -145,6 +155,10 @@ body{
         background: var(--bg-color);
         padding: 60px 0;
     }
+
+.adress-list{
+    margin-top: 20px;
+}
 
 .adress-list-link{
     font-size: 14px;
@@ -158,4 +172,8 @@ body{
 
 .adress-list-location-link{
     color: var(--adress-color);
+}
+
+.adress-list-item{
+    margin-bottom: 9px;
 }
