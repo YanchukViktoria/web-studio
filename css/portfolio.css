@@ -56,7 +56,7 @@ body{
 
 .header-wrap{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -100,8 +100,9 @@ body{
     }
 
 .portfolio-list-move{
-    padding-left: 24px;
-    padding-top: 24px;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 20px;
 }
 
 .filters-list{
@@ -109,6 +110,7 @@ body{
     justify-content: center;
     gap: 5px;
     padding-top: 94px;
+    padding-bottom: 34px;
 }
 
 .filter-list-btn{
@@ -143,6 +145,7 @@ body{
 }
 
 .portfolio-list-item{
+    width: 368px;
     border: 1px solid var(--white-main-color);
     font-size: 16px;
     line-height: 1.6;
