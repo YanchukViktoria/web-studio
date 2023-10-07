@@ -8,6 +8,7 @@
     --footer-mail-number-color: rgba(255, 255, 255, 0.6);
     --adress-hero-color: rgba(255, 255, 255, 1);
     --team-bg-color: rgba(245, 244, 250, 1);
+    --bgimg-color:rgba(245, 244, 250, 1);
 }
 
 .container{
@@ -30,6 +31,8 @@
 }
 
      /* Лого */
+
+
 
     .logo{
         font-family: Raleway;
@@ -135,16 +138,76 @@ body{
     line-height: 1,1;
     color: var(--descript-and-header-color);
     padding-bottom: 10px;
+
+    padding-top: 30px;
 }
 
-.feauture-list-item{
-    max-width: 270px;
+.feautures-list-img-first::before{
+    content: "";
+
+    background-image: url("./img/antena.png");
+    /* background-size: 270px 120px; */
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+    background-color: var(--bgimg-color);
+
+    background-position: center;
+}
+
+.feautures-list-img-second::before{
+    content: "";
+
+    background-image: url("./img/clock.png");
+    /* background-size: 270px 120px; */
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+    background-color: var(--bgimg-color);
+    
+    background-position: center;
+}
+
+.feautures-list-img-third::before{
+    content: "";
+
+    background-image: url("./img/diagramma.png");
+    /* background-size: 270px 120px; */
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+    background-color: var(--bgimg-color);
+    
+    background-position: center;
+}
+
+.feautures-list-img-fourth::before{
+    content: "";
+
+    background-image: url("./img/astronaut.png");
+    /* background-size: 270px 120px; */
+    width: 270px;
+    height: 120px;
+    display: inline-block;
+    background-repeat: no-repeat;
+
+    background-color: var(--bgimg-color);
+    
+    background-position: center;
 }
 
 .feautures-list-descript{
     font-weight: 400;
     line-height: 1.7;
     color: var(--p-color);
+
+    max-width: 270px;
 }
         /* "Чим ми займаємось" */
     .section-work{
