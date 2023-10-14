@@ -9,6 +9,7 @@
     --adress-hero-color: rgba(255, 255, 255, 1);
     --team-bg-color: rgba(245, 244, 250, 1);
     --bgimg-color:rgba(245, 244, 250, 1);
+    --section-hero-bg-color-for-img:rgba(47, 48, 58, 0.4);
 }
 
 .container{
@@ -90,6 +91,8 @@ body{
     .section-hero{
         background-color: var(--bg-color);
         padding: 200px 0;
+
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("./img/section-hero-bg-img.png");
     }
 
 .section-hero-title{
@@ -106,6 +109,7 @@ body{
 .section-hero-btn{
      background-color: var(--blue-main-color);
      color: var(--white-main-color);
+
     font-size: 16px;
     font-weight: 700;
     line-height: 1,8;
