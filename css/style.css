@@ -41,7 +41,6 @@
         font-weight: 700;
         line-height: 31px;
         letter-spacing: 0.03em;
-        text-align: left;
         text-decoration: none;
         color: var(--blue-main-color);
     }
@@ -59,12 +58,7 @@ body{
     font-size: 14px;
 }
         /* Шапка */
-.nav{
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-align: left;
-}
+
 .nav-list{
     display: flex;
     gap: 50px;
@@ -83,7 +77,6 @@ body{
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    text-align: left;
 }
 
         /* Секція герой */
@@ -92,7 +85,7 @@ body{
         background-color: var(--bg-color);
         padding: 200px 0;
 
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url("./img/section-hero-bg-img.png");
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./img/section-hero-bg-img.jpg");
     }
 
 .section-hero-title{
