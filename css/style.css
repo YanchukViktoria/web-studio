@@ -218,12 +218,6 @@ body{
     justify-content: space-between;
 }
 
-.section-work-title{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
 .work-list-img{
     width: 370px;
     height: 294px;
@@ -241,6 +235,9 @@ body{
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-align: center;
+
+    margin-bottom: 50px;
+
     color: var(--descript-and-header-color);
 }
 
@@ -275,9 +272,9 @@ body{
 
 .team-list-title{
     color: var(--descript-and-header-color);
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     font-weight: 500;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 .team-list-descript{
@@ -290,14 +287,16 @@ body{
     justify-content: space-between;
 }
 
+.icon-list-item{
+    padding: 12px;
+}
+
 .icons-list{
     display: flex;
     gap: 10px;
     justify-content: center;
 
     margin-top: 16px;
-
-    padding: 12px;
 }
         /* clients */
 .section-clients{
@@ -327,6 +326,27 @@ padding-bottom: 94px;
         background: var(--bg-color);
         padding: 60px 0;
     }
+
+.footer-wrap{
+    display: flex;
+    gap: 70px;
+}
+
+.footer-ico-list{
+    display: flex;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.footer-ico-title{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+
+    color: var(--adress-hero-color);
+}
 
 .adress{
  margin-top: 20px;
