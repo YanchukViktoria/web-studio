@@ -21,16 +21,126 @@
   
 
 .header{
-    background-color: var(--white-main-color);
     padding: 24px 0;
 }
 
 .header-wrap{
     display: flex;
     align-items: center;
-    gap: 93px;
 }
 
+        /* ico-header */
+.contacts-list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding-left: 318px;
+}
+
+.contact-list-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--p-color);
+}
+
+.contact-list-item:hover{
+    color: var(--blue-main-color);
+}
+
+
+.contact-list-svg{
+    fill: currentColor;
+}
+        /* ico-team */
+.icons-list{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+
+.icons-list-link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgba(175, 177, 184);
+}
+
+.icons-list-link:hover{
+    color: var(--adress-hero-color);
+    background-color: var(--blue-main-color);
+}
+
+.icons-list-svg{
+    fill: currentColor;
+}
+
+        /* ico-clients */
+
+.client-ico-list{
+    display: flex;
+    gap: 30px;
+}
+
+.client-ico-item{
+    flex-basis: calc((100% - 150px) / 6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: block; */
+    height: 92px;
+    border-radius: 4px;
+    border: solid 1px;
+}
+
+.client-ico-link{
+    /* display: block;
+    height: 92px;
+    border-radius: 4px;
+    border: solid 1px; */
+}
+
+.client-ico-item:hover{
+    color: var(--blue-main-color);
+    border-color: var(--blue-main-color);
+}
+
+.client-ico-svg{
+    fill: currentColor;
+}
+
+        /* ico-join */
+.join-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--p-color);
+}
+
+.join-list-link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--adress-hero-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-list-link:hover{
+    background-color: var(--blue-main-color);
+}
+
+.join-list-svg{
+    fill: currentColor;
+}
      /* Лого */
 
 
@@ -42,6 +152,9 @@
         line-height: 31px;
         letter-spacing: 0.03em;
         text-decoration: none;
+
+        margin-right: 93px;
+
         color: var(--blue-main-color);
     }
        
@@ -64,15 +177,8 @@ body{
     gap: 50px;
 }
 
-.contacts-list{
-    display: flex;
-    gap: 50px;
-
-    padding-left: 226px;
-}
-
-.header-link-mail, .header-link-number{
-    color: var(--p-color);
+.nav-list-link:hover{
+    color: var(--blue-main-color);
 }
 
 .nav-list-item, .nav-list-link, .contacts-list-item{
@@ -290,21 +396,13 @@ body{
 .icon-list-item{
     padding: 12px;
 }
-
-.icons-list{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-
-    margin-top: 16px;
-}
         /* clients */
 .section-clients{
 padding-top: 94px;
 padding-bottom: 94px;
 }
 
-.clients-title{
+.client-title{
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
@@ -312,12 +410,6 @@ padding-bottom: 94px;
     text-align: center;
 
     margin-bottom: 50px;
-}
-
-.clients-ico-list{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
 }
 
 
@@ -339,11 +431,13 @@ padding-bottom: 94px;
     margin-top: 20px;
 }
 
-.footer-ico-title{
+.join-ico-title{
     font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1.1;
     letter-spacing: 0.03em;
+
+    margin-bottom: 20px;
 
     color: var(--adress-hero-color);
 }
