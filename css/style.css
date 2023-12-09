@@ -93,17 +93,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* display: block; */
     height: 92px;
     border-radius: 4px;
     border: solid 1px;
-}
-
-.client-ico-link{
-    /* display: block;
-    height: 92px;
-    border-radius: 4px;
-    border: solid 1px; */
+    color: rgba(175, 177, 184);
 }
 
 .client-ico-item:hover{
