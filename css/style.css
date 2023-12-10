@@ -317,9 +317,36 @@ body{
     justify-content: space-between;
 }
 
+.work-list-wrap{
+    position: relative;
+}
+
 .work-list-img{
     width: 370px;
     height: 294px;
+}
+
+.work-list-desc{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--adress-hero-color);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
         /* Команда */
 
