@@ -146,8 +146,6 @@
         letter-spacing: 0.03em;
         text-decoration: none;
 
-        margin-right: 93px;
-
         color: var(--blue-main-color);
     }
        
@@ -456,6 +454,7 @@ padding-bottom: 94px;
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 
     margin-bottom: 20px;
 
