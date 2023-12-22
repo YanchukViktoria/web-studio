@@ -166,6 +166,8 @@ body{
 .nav-list{
     display: flex;
     gap: 50px;
+
+    margin-left: 93px;
 }
 
 .nav-list-link:hover{

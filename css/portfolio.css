@@ -169,7 +169,9 @@ body{
     font-weight: 400;
     line-height: 1.8px;
     letter-spacing: 0.03em;
+
     margin-top: 19px;
+
     color: var(--p-number-in-head-color);
 }
 
