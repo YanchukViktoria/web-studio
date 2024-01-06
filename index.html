@@ -71,7 +71,7 @@
 
                 <h1 class="section-hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-                <button class="section-hero-btn">Замовити послугу</button>
+                <button class="section-hero-btn" data-modal-open>Замовити послугу</button>
 
             </div>
             </section>
@@ -171,7 +171,7 @@
                             <li class="icons-list-item">
                                 <a class="icons-list-link" href="">
                                     <svg class="icons-list-svg" width="20" height="20">
-                                        <use href="./symbol-defs.svg#icon-facebook-footer-third"></use>
+                                        <use href="./symbol-defs.svg#icon-facebook-third"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -208,7 +208,7 @@
                                  <li class="icons-list-item">
                                     <a class="icons-list-link" href="">
                                         <svg class="icons-list-svg" width="20" height="20">
-                                            <use href="./symbol-defs.svg#icon-facebook-footer-third"></use>
+                                            <use href="./symbol-defs.svg#icon-facebook-third"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -246,7 +246,7 @@
                                                                 <li class="icons-list-item">
                                     <a class="icons-list-link" href="">
                                         <svg class="icons-list-svg" width="20" height="20">
-                                            <use href="./symbol-defs.svg#icon-facebook-footer-third"></use>
+                                            <use href="./symbol-defs.svg#icon-facebook-third"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -284,7 +284,7 @@
                                                                 <li class="icons-list-item">
                                     <a class="icons-list-link" href="">
                                         <svg class="icons-list-svg" width="20" height="20">
-                                            <use href="./symbol-defs.svg#icon-facebook-footer-third"></use>
+                                            <use href="./symbol-defs.svg#icon-facebook-third"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -393,7 +393,7 @@
                             <li class="join-list-item">
                                 <a class="join-list-link" href="">
                                     <svg class="join-list-svg" width="20" height="20">
-                                        <use href="./symbol-defs.svg#icon-facebook-footer-third"></use>
+                                        <use href="./symbol-defs.svg#icon-facebook-third"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -406,8 +406,92 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="footer-form-div">
+                        <h6 class="footer-fotm-title">Підпишіться на розсилку</h6>
+
+                        <form class="footer-form">
+                            <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
+                            <button class="footer-form-btn" type="submit">
+                                Підписатися
+                                <a class="footer-form-link" href="#">
+                                    <svg class="footer-form-svg" width="24" height="24">
+                                        <use href="./symbol-defs.svg#icon-Telegram-footer"></use>
+                                    </svg>
+                                </a>
+                            </button>
+                        </form>
+
+                    </div>
                 </div>
             </div>
         </footer>
+
+        <!-- modal -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p class="modal-desc">Залиште свої дані, ми вам передзвонимо</p>
+
+                <button class="modal-btn-close" data-modal-close>
+                    <a class="modal-close-link" href="#">
+                        <svg class="modal-svg-close" width="11" height="11">
+                            <use href="./symbol-defs.svg#icon-close-modal"></use>
+                        </svg>
+                    </a>
+                </button>
+
+                <form class="modal-form" action="">
+                    <label for="" class="modal-label" >
+                        <span class="modal-name-span">Ім'я</span>
+                        <span class="modal-span">
+                            <a class="modal-link" href="#">
+                            <input class="input-name" type="name"  name="user-name" minlength="3" maxlength="10" required>
+                                <svg class="modal-svg" width="12" height="12">
+                                    <use href="./symbol-defs.svg#icon-person-modal"></use>
+                                </svg>
+                            </a>
+                        </span>
+
+                    </label>
+                    <label for="" class="modal-label" >
+                        <span class="modal-name-span">Телефон</span>
+                        <span class="modal-span">
+                            <a class="modal-link" href="#">
+                            <input class="input-tel" type="tel"  name="user-tel" pattern="^380\d{9}$" maxLength="12" required>
+                                <svg class="modal-svg" width="13" height="13">
+                                    <use href="./symbol-defs.svg#icon-phone-modal"></use>
+                                </svg>
+                            </a>
+                        </span>
+
+                    </label>
+                    <label for="" class="modal-label">
+                        <span class="modal-name-span">Пошта</span>
+                        <span class="modal-span">
+                            <a class="modal-link" href="#">
+                            <input class="input-email" type="email"  name="user-email" required>
+                                <svg class="modal-svg" width="15" height="12">
+                                    <use href="./symbol-defs.svg#icon-email-modal"></use>
+                                </svg>
+                            </a>
+                        </span>
+
+                    </label>
+                    <label for="" class="modal-label modal-label-texarea">
+                        <span class="modal-name-span">Коментар</span>
+                        <textarea class="modal-texarea" name="user-message"></textarea>
+                        <div class="modal-coment-wrap">
+                            <input class="input-coment" type="checkbox" name="user-privacy" required>
+                            <span class="modal-span modal-span-privacy">Погоджуюся з розсилкою та приймаю <a class="modal-privacy-link" href="">Умови договору</a></span>
+                        </div>
+
+                        <button class="modal-btn-send" type="submit">Відправити</button>
+                    </label>
+                </form>
+
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
     </body>
 </html>
