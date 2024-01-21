@@ -14,17 +14,17 @@
 
         <title>WebStudio</title>
     </head>
-    <body>
-        <header class="header">
+    <body id="body">
+        <header id="header" class="header">
             <div class="container">
                 <!-- інформація з верху сайта -->
                 <div class="header-wrap">
-                    <a class="logo">Web<span class="logo-header">Studio</span> </a>
+                    <a class="logo" href="./index.html">Web<span class="logo-header">Studio</span> </a>
 
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-list-item"><a class="nav-list-link nav-list-link-first" href="./index.html">Студія</a></li>
-                        <li class="nav-list-item"><a class="nav-list-link nav-list-link-sec" href="./portfolio.html">Портфоліо</a></li>
+                        <li class="nav-list-item"><a class="nav-list-link nav-list-link-current" href="./portfolio.html">Портфоліо</a></li>
                         <li class="nav-list-item"><a class="nav-list-link nav-list-link-third" href="">Контакти</a></li>
                     </ul>
                 </nav>
@@ -219,12 +219,7 @@
                 </div>
         </div>
 
-        <script href="">
-            const header=document.getElementById("header");
-            const headerHeight=header.offsetHeight;
-            const body=document.getElementById("body");
-            body.style.paddingTop=headerHeight +"px";
-        </script>
+        <script href="./fixed.js"></script>
         
     </footer>
     </body>

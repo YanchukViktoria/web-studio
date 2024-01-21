@@ -107,10 +107,6 @@
     gap: 10px;
 }
 
-.modal-label{
-
-}
-
 .input-name, .input-email, .input-tel{
     width: 100%;
     height: 40px;
@@ -366,61 +362,23 @@ body{
     color: var(--blue-main-color);
 }
 
-.nav-list-link-first:hover:before{
+.nav-list-link-current::before{
     content: "";
-
-    display: block;
-    
-    border: 4px solid var(--blue-main-color);
-
-    border-radius: 2px;
-
-    height: 4px;
-    width: 48px;
-
     position: absolute;
-
-    bottom:-32px;
-}
-
-.nav-list-link-sec:hover:before{
-    content: "";
-
-    display: block;
-    
-    border: 4px solid var(--blue-main-color);
-
-    border-radius: 2px;
-
+    bottom: 0;
+    left:0;
+    width: 100%;
     height: 4px;
-    width: 72px;
-
-    position: absolute;
-
-    bottom:-32px;
-}
-
-.nav-list-link-third:hover:before{
-    content: "";
-
-    display: block;
-    
-    border: 4px solid var(--blue-main-color);
-
     border-radius: 2px;
-
-    height: 4px;
-    width: 64px;
-
-    position: absolute;
-
-    bottom:-32px;
+    background-color: rgba(33, 150, 243, 1);
+    margin-bottom: -33px;
 }
 
 .nav-list-item, .nav-list-link, .contacts-list-item{
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: 0.02em;
+    position: relative;
 }
 
         /* Секція герой */
