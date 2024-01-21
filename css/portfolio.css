@@ -146,7 +146,7 @@ body{
     padding-bottom: 94px;
     }
 
-.portfolio-overlay-desc{
+/* .portfolio-overlay-desc{
     max-width: 322px;
 
     position: absolute;
@@ -174,7 +174,7 @@ body{
 
 .portfolio-list-move{
     margin: 24px 20px;
-}
+} */
 
 .filters-list{
     display: flex;
