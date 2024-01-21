@@ -72,6 +72,8 @@
 
     top: 14px;
     right: 14px;
+
+    background-color: inherit;
 }
 
 .modal-btn-close:hover{
@@ -156,9 +158,6 @@
     border-bottom: 1px solid var(--blue-main-color);
 }
 
-.modal-label-texarea{
-
-}
 
 .modal-texarea{
     resize: none;
@@ -200,6 +199,17 @@
 
 .header{
     padding: 24px 0;
+
+    background-color: white;
+
+    z-index: 1;
+
+    position: fixed;
+
+    min-height: 80px;
+    width: 100%;
+
+    top: 0;
 }
 
 .header-wrap{
@@ -338,6 +348,8 @@
 body{
     font-family: Roboto;
     font-size: 14px;
+
+    padding-top: 80px;
 }
         /* Шапка */
 
@@ -346,10 +358,63 @@ body{
     gap: 50px;
 
     margin-left: 93px;
+
+    position: relative;
 }
 
 .nav-list-link:hover{
     color: var(--blue-main-color);
+}
+
+.nav-list-link-first:hover:before{
+    content: "";
+
+    display: block;
+    
+    border: 4px solid var(--blue-main-color);
+
+    border-radius: 2px;
+
+    height: 4px;
+    width: 48px;
+
+    position: absolute;
+
+    bottom:-32px;
+}
+
+.nav-list-link-sec:hover:before{
+    content: "";
+
+    display: block;
+    
+    border: 4px solid var(--blue-main-color);
+
+    border-radius: 2px;
+
+    height: 4px;
+    width: 72px;
+
+    position: absolute;
+
+    bottom:-32px;
+}
+
+.nav-list-link-third:hover:before{
+    content: "";
+
+    display: block;
+    
+    border: 4px solid var(--blue-main-color);
+
+    border-radius: 2px;
+
+    height: 4px;
+    width: 64px;
+
+    position: absolute;
+
+    bottom:-32px;
 }
 
 .nav-list-item, .nav-list-link, .contacts-list-item{
@@ -672,7 +737,7 @@ padding-bottom: 94px;
 
     color: var(--adress-hero-color);
 
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-form{
@@ -697,7 +762,6 @@ padding-bottom: 94px;
 }
 
 .footer-form-btn{
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.8;
@@ -714,13 +778,6 @@ padding-bottom: 94px;
     gap: 10px;
 
     border-radius: 4px;
-}
-
-.footer-form-link{
-    color: var(--adress-hero-color);
-
-    width: 24px;
-    height: 24px;
 }
 
 .footer-form-svg{

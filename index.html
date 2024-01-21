@@ -33,9 +33,9 @@
                         <nav class="nav">
 
                             <ul class="nav-list">
-                                <li class="nav-list-item"><a class="nav-list-link" href="">Студія</a></li>
-                                <li class="nav-list-item"><a class="nav-list-link" href="./portfolio.html">Портфоліо</a></li>
-                                <li class="nav-list-item"><a class="nav-list-link" href="">Контакти</a></li>
+                                <li class="nav-list-item"><a class="nav-list-link nav-list-link-first" href="./index.html">Студія</a></li>
+                                <li class="nav-list-item"><a class="nav-list-link nav-list-link-sec" href="./portfolio.html">Портфоліо</a></li>
+                                <li class="nav-list-item"><a class="nav-list-link nav-list-link-third" href="">Контакти</a></li>
                             </ul>
 
                         </nav>
@@ -414,11 +414,9 @@
                             <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
                             <button class="footer-form-btn" type="submit">
                                 Підписатися
-                                <a class="footer-form-link" href="#">
                                     <svg class="footer-form-svg" width="24" height="24">
                                         <use href="./symbol-defs.svg#icon-Telegram-footer"></use>
                                     </svg>
-                                </a>
                             </button>
                         </form>
 
@@ -492,6 +490,11 @@
             </div>
         </div>
 
-        <script src="./script.js"></script>
+        <script src="./script.js">
+            const header=document.getElementById("header");
+            const headerHeight=header.offsetHeight;
+            const body=document.getElementById("body");
+            body.style.paddingTop=headerHeight +"px";
+        </script>
     </body>
 </html>
