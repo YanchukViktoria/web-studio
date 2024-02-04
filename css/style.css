@@ -12,6 +12,16 @@
     --section-hero-bg-color-for-img:rgba(47, 48, 58, 0.4);
 }
 
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
     /* ----- */
 
 .backdrop {
@@ -91,10 +101,13 @@
     align-items: center;
 
     border-radius: 50%;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-link:focus-within{
     color: var(--blue-main-color);
+    
 }
 
 .modal-svg-close{
@@ -115,7 +128,8 @@
 
     border-radius: 4px;
 
-    border: 1px solid rgba(33, 33, 33, 0.2)
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    
 }
 
 .input-tel, .input-email, .input-name, .input-coment, .modal-texarea:focus-within{
@@ -254,6 +268,8 @@
     justify-content: center;
     border-radius: 50%;
     color: rgba(175, 177, 184);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-list-link:hover{
@@ -281,6 +297,8 @@
     border-radius: 4px;
     border: solid 1px;
     color: rgba(175, 177, 184);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-ico-item:hover{
@@ -309,6 +327,8 @@
     border-radius: 50%;
     color: var(--adress-hero-color);
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-list-link:hover{
@@ -370,7 +390,10 @@ body{
     height: 4px;
     border-radius: 2px;
     background-color: rgba(33, 150, 243, 1);
-    margin-bottom: -33px;
+    margin-bottom: -32px;
+
+    animation-name: ani;
+    animation-duration: 3s;
 }
 
 .nav-list-item, .nav-list-link, .contacts-list-item{
@@ -378,6 +401,8 @@ body{
     line-height: 1.1;
     letter-spacing: 0.02em;
     position: relative;
+
+    transition: color 0.5s ease;
 }
 
         /* Секція герой */
@@ -390,6 +415,7 @@ body{
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./img/section-hero-bg-img.jpg");
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
     }
 
 .section-hero-title{
@@ -409,7 +435,7 @@ body{
 
     font-size: 16px;
     font-weight: 700;
-    line-height: 1,8;
+    line-height: 1.8;
     letter-spacing: 0.06em;
     text-align: center;
     width: 216px;
